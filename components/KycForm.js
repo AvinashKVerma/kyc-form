@@ -17,7 +17,7 @@ const KycForm = () => {
       <div className="p-1 bg-white">
         <NavBar />
         <Title title={"SEARCH DETAILS"} />
-        <div className="flex flex-col md:flex-row md:justify-between">
+        <div className="flex flex-col md:flex-row ">
           <InputField label={"Consumer No"} />
           <InputField label={"Meter Serial"} />
           <div className="self-center ml-0 md:ml-10 mt-2 md:mt-0">
@@ -36,16 +36,14 @@ const KycForm = () => {
         </div>
         <Title title={"PERSONAL INFORMATION"} />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <InputField label={"Consumer No"} />
+          {/* <InputField label={"Consumer No"} /> */}
           <Dropdown label={"Applicant Type"} options={options} />
           <InputField label={"Aadhar / PAN"} />
           <InputField label={"Applicant Name"} />
           <Dropdown label={"Gender"} options={["Male", "Female", "Others"]} />
           <InputField label={"Father Name"} />
           <InputField label={"Holding No."} />
-          <InputField label={"Plot No."} />
-          <InputField label={"Khata No."} />
-          <Dropdown label={"Locality"} options={["Male", "Female", "Others"]} />
+          <Dropdown label={"Locality"} options={options} />
           <InputField label={"Contact No."} />
         </div>
         <Title title={"SUPPLY INFORMATION"} />
@@ -59,19 +57,19 @@ const KycForm = () => {
         <Title title={"METER DETAILS"} />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Dropdown label={"Make"} options={options} />
-          <InputField label={"Serial No."} />
+          {/* <InputField label={"Serial No."} /> */}
           <InputField label={"Digit"} />
           <InputField label={"Body Seal"} />
           <InputField label={"Terminal Seal"} />
           <InputField label={"Reading Kwh"} />
           <InputField label={"Reading Kvah"} />
-          <InputField label={"Meter Type"} />
           <InputField label={"Demand KVA"} />
+          <Dropdown label={"Meter Type"} options={options} />
           <InputField label={"Book No."} />
           <Dropdown label={"Meter Owner"} options={options} />
           <InputField label={"Sec. Amt"} />
           <InputField label={"Reciept No."} />
-          <InputField label={"Sec. Dep. Date"} />
+          {/* <InputField label={"Sec. Dep. Date"} /> */}
           <InputField label={"Conn. Date"} />
         </div>
         <Title title={"LOAD FEASIBILITY"} />
