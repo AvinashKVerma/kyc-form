@@ -46,7 +46,8 @@ const KycForm = () => {
           <Dropdown label={"Locality"} options={options} />
           <InputField label={"Contact No."} />
         </div>
-        <Title title={"SUPPLY INFORMATION"} />
+        {/* <Title title={"SUPPLY INFORMATION"} /> */}
+        <Title title={"ADDRESS"} />
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
           <InputField label={"House No."} />
           <InputField label={"Street"} />
